@@ -74,6 +74,7 @@ function setTimer() {
     };
     if (parsedDays === 0 && parsedHours === 0 && parsedMinutes === 0 && parsedSeconds === 0) {
         stopTimer();
+        startBtn.disabled = true;
     };
     days.textContent = parsedDays;
     hours.textContent = parsedHours;
