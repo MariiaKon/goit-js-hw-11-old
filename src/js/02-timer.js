@@ -76,8 +76,8 @@ function setTimer() {
         stopTimer();
         startBtn.disabled = true;
     };
-    days.textContent = parsedDays;
-    hours.textContent = parsedHours;
-    minutes.textContent = parsedMinutes;
-    seconds.textContent = parsedSeconds;
+    days.textContent = parsedDays.toString().padStart(2, '0');
+    hours.textContent = parsedHours.toString().padStart(2, '0');
+    minutes.textContent = parsedMinutes.toString().padStart(2, '0');
+    seconds.textContent = parsedSeconds.toString().padStart(2, '0');
 };
